@@ -1,0 +1,13 @@
+<table>
+
+ <tr><th><%= @user.handle %></th></tr>
+  <% @tweets.each do |tweet|  %>
+  <tr><td class="tweet-sent>"><%= tweet.text  %> </td> </tr>
+  <tr class="time-sent"><td><%= tweet.time_sent  %> </td> </tr>
+  <% end %>
+
+</table>  
+
+<p>
+  <%=@user.handle%> tweets on average every <%= @user.avgTweetTime %> minutes.
+</p>

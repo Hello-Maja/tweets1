@@ -1,23 +1,25 @@
 <div class="container">
-  <h1>Welcome to Sinatra!</h1>
-  <p>Hello, world!</p>
+ <!--  <h1>Whatchu wanna tweet, sucka?</h1>
+  <form action="/tweet" method="POST">
+  <label>Type twitter handle here<input type="text" name="handle"></label>
+  <label>Type tweet here<input type="text" name="tweet" ></label>
+  <input type="submit" value="Tweet this!">
+  </form>
+ -->
 
-  <table>
-    <tr>
-      <th>File Description</th>
-      <th>File Location</th>
-    </tr>
-    <tr>
-      <td>This view file</td>
-      <td><code><%= __FILE__.gsub(Sinatra::Application.root, '') %></code></td>
-    </tr>
-    <tr>
-      <td>The layout file</td>
-      <td><code><%= File.expand_path('../layout.erb', __FILE__).gsub(Sinatra::Application.root, '') %></code></td>
-    </tr>
-    <tr>
-      <td>The current controller</td>
-      <td><code><%= File.expand_path('../../controllers/index.rb', __FILE__).gsub(Sinatra::Application.root, '') %></code></td>
-    </tr>
-  </table>
+    <h1>Who you lookin' at, sucka?</h1>
+  <form action="/find_user" method="POST">
+  <label>Type twitter handle here<input type="text" name="handle"></label>
+  <input type="submit" value="Find sucka!">
+  </form>
 </div>
+
+<!-- 
+There should be two types of URLs: the index page with a URL field to enter a Twitter username and a URL to display the most recent tweets of a particular username.
+
+That is,
+
+http://localhost:9393/jfarmer
+should display the most recent tweets from https://twitter.com/jfarmer.
+
+ -->
